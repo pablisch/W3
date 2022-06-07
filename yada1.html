@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Climate Crisis</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <h1 id="title">
+      <a onclick = "Change_Font_Size()">The Climate Crisis</a>
+    </h1>
+    <p id="intro">Climate change refers to long-term shifts in temperatures and weather patterns. These shifts may be natural, such as through variations in the solar cycle. But since the 1800s, human activities have been the main driver of climate change, primarily due to burning fossil fuels like coal, oil and gas.</p>
+    <button onclick="Change_Colour()">Party Mode!</button>
+    <div class="block">
+    <h2>
+      <a onclick="Show_Hide()">What Causes Global Warming?</a>
+    </h2>
+    <p id="appear" style="display:none"> <a href="https://www.un.org/en/climatechange/what-is-climate-change">Source</a></p>
+    <img src="factory-pollution.png" alt="Smokestacks" class="image">
+    <p>
+      Burning fossil fuels generates greenhouse gas emissions that act like a blanket wrapped around the Earth, trapping the sun’s heat and raising temperatures.Examples of greenhouse gas emissions that are causing climate change include carbon dioxide and methane. These come from using gasoline for driving a car or coal for heating a building, for example. Clearing land and forests can also release carbon dioxide. Landfills for garbage are a major source of methane emissions.
+    </p>
+    </div>
+    <figure>
+      <img src="emissionspiechart.png" width=60% height=auto alt="Pie chart showing emission sources">
+        <figurecaption>    
+        <p>Major sources of emissions are:</p>
+        <ul>
+          <li>Electricity and heat supply</li>
+          <li>Transportation</li>
+          <li>Agriculture</li>
+        </ul>
+        </figurecaption>
+    </figure>
+    <figure>
+      <img src="temperaturechart.png" width=100% height=auto alt="Chart showing global temperature against time">
+      <figcaption>Humans are the main driver of climate change, not natural forces.</figcaption>
+    </figure>
+    <div class="block">
+    <p>The climate emergency is the most important issue of our age.</p>
+    <blockquote><strong>"This ongoing irresponsible behavior will no doubt be remembered in history as one of the greatest failures of humankind."</strong></blockquote>
+    <p style="font-size:90%; text-align:right;"><em>- Greta Thunberg, in her speech to the British Parliament</em></p>
+    </div>
+    <div class="block">
+    <h2>
+      Why Care About Climate Change?
+    </h2>
+    <img src="australian-wildfire.jfif" alt="A house burning in the Australian wildfire" class="image">
+    <p>
+      Climate change can affect our health, ability to grow food, housing, safety and work. Some of us are already more vulnerable to climate impacts, such as people living in small island nations and other developing countries. Conditions like sea-level rise and saltwater intrusion have advanced to the point where whole communities have had to relocate, and protracted droughts are putting people at risk of famine. In the future, the number of “climate refugees” is expected to rise.
+    </p>
+    <p>
+      The consequences of climate change now include, among others, intense droughts, water scarcity, severe fires, rising sea levels, flooding, melting polar ice, catastrophic storms and declining biodiversity.
+    </p>
+    </div>
+    <div class="block">
+    <h2>MAP</h2>
+    <div id="googleMap" style="width:50%;height:200px;"></div></div>
+    <script>
+      function myMap() {
+        var mapProp= {
+        center:new google.maps.LatLng(52.5,0),
+        zoom:4,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
+    <p class="link">Take the <a href="quiz.html"> quiz</a></p>
+    <div class="block">
+    <h2>Related Links:</h2>
+    <ul id="related-links">
+      <li>
+        <a href="https://indiaenvironment.org/" target="_blank"> The Environmentalist Foundation of India </a>
+      </li>
+      <li>
+        <a href="https://www.climatewatchdata.org/" target="_blank"> Climate Watch </a>
+      </li>      
+      <li>
+        <a href="https://unfccc.int/" target="_blank"> United Nations Framework Convention on Climate Change </a>
+      </li>
+      <li>
+        <a href="https://education.nationalgeographic.org/resource/climate-change" target="_blank"> National Geographic </a>
+      </li>
+    </ul>
+    </div>
+  </body>
+  
+</html>
