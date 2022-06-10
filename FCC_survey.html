@@ -6,38 +6,45 @@
   </head>
   <body>
     <h1 id="title">Muddy Hands Forest School Survey Form</h1>
-    <p id="description">A brief survey about our Forest School offering to help us make improvements to suit you and your chuldren.</p>
-    <form action='https://register-demo.freecodecamp.org'>
-      <fieldset>
-        <label>Your name <input type="text" id="name" name="name" required /></label>
-        <label>Your Email <input id="email" type="email" name="email" required /></label>
-        <label>Create a New Password: <input type="password" name="password" pattern="[a-z0-5]{8,}" required /></label>
-      </fieldset>
-      <fieldset>
-        <label><input type="radio" name="account-type" /> Personal Account</label>
-        <label><input type="radio" name="account-type" /> Business Account</label>
-        <label>
-          <input type="checkbox" name="terms" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
-			  </label>
-      </fieldset>
-      <fieldset>
-        <label>Upload a profile picture: <input type="file" name="file" /></label>
-        <label>Input your age (years): <input type="number" name="age" min="13" max="120" />
-			  </label>
-        <label>How did you hear about us?
-          <select name="referrer">
-            <option value="">(select one)</option>
-            <option value="1">freeCodeCamp News</option>
-            <option value="2">freeCodeCamp YouTube Channel</option>
-            <option value="3">freeCodeCamp Forum</option>
-            <option value="4">Other</option>
-          </select>
-        </label>
-        <label>Provide a bio:
-          <textarea name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
-			  </label>
-      </fieldset>
-      <input type="submit" value="Submit" />
-    </form>
+    <p id="description">A brief survey for parents and carers about our Forest School offering to help us make improvements to suit you and your chuldren.</p>
+    <main>
+      <form id="survey-form" action='https://survey-form.muddyhandsforestschool.org'>
+        <fieldset>
+          <label>Your name <input type="text" id="name" name="name" required /></label>
+          <label>Your Email <input type="email" id="email" name="email" required /></label>
+          <label>Your age (optional) <input type="number" id="age" name="age" min="13" max="120" /></label>
+          <label>Why does you child come to our Forest School?
+            <select name="reason">
+              <option value="">Please select the best fit reason</option>
+              <option value="1">My child loves Forest school</option>
+              <option value="2">To bring my child closer to nature</option>
+              <option value="3">For my children to learn outdoor skills</option>
+              <option value="4">I just want some time for myself</option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+          <p>Would you recommend Muddy Hands Forest School to a friend?</p>
+          <label><input type="radio" id="recommend" name="recommend" /> Definitely</label>
+          <label><input type="radio" id="recommend" name="recommend" /> Maybe</label>
+          <label><input type="radio" id="recommend" name="recommend" /> Unlikely</label>
+          <label>What does your child like most about our Forest School?
+            <select name="reason">
+              <option value="">Please select their favourite</option>
+              <option value="1">Being outdoors</option>
+              <option value="2">Being with friends</option>
+              <option value="3">Learning new skills</option>
+              <option value="4">Chances to play</option>
+              <option value="5">Other</option>
+            </select>  
+          </label>
+
+          
+          <label>Any additional comments or suggestions for us?
+            <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="I would like to say..."></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </main>
   </body>
 </html>
