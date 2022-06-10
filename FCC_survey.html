@@ -5,16 +5,19 @@
 	  <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">Muddy Hands Forest School Survey Form</h1>
-    <p id="description">A brief survey for parents and carers about our Forest School offering to help us make improvements to suit you and your chuldren.</p>
+    <header>
+    <h1 id="title">Muddy Hands Forest School Survey</h1>
+    <p id="description">A brief survey for parents and carers about our Forest School offering to help us make improvements to suit you and your children.</p>
+    </header>
     <main>
       <form id="survey-form" action='https://survey-form.muddyhandsforestschool.org'>
         <fieldset>
-          <label>Your name <input type="text" id="name" name="name" required /></label>
-          <label>Your Email <input type="email" id="email" name="email" required /></label>
-          <label>Your age (optional) <input type="number" id="age" name="age" min="13" max="120" /></label>
+          <label>Your name <input class="field" type="text" id="name" name="name" placeholder="Enter your name" required /></label>
+          <label>Your Email <input class="field" type="email" id="email" name="email" placeholder="Enter your Email" required /></label>
+          <label>Your age (optional) <input class="field" type="number" id="age" name="age" min="13" max="120" placeholder="Enter your age (optional)" /></label>
+          <br>
           <label>Why does you child come to our Forest School?
-            <select name="reason">
+            <select class="field" name="reason">
               <option value="">Please select the best fit reason</option>
               <option value="1">My child loves Forest school</option>
               <option value="2">To bring my child closer to nature</option>
@@ -23,12 +26,14 @@
               <option value="5">Other</option>
             </select>
           </label>
-          <p>Would you recommend Muddy Hands Forest School to a friend?</p>
-          <label><input type="radio" id="recommend" name="recommend" /> Definitely</label>
-          <label><input type="radio" id="recommend" name="recommend" /> Maybe</label>
-          <label><input type="radio" id="recommend" name="recommend" /> Unlikely</label>
+          <br>
+          <label>Would you recommend Muddy Hands Forest School to a friend?</label>
+          <label><input class="inline" type="radio" id="recommend" name="recommend" /> Definitely</label>
+          <label><input class="inline" type="radio" id="recommend" name="recommend" /> Maybe</label>
+          <label><input class="inline" type="radio" id="recommend" name="recommend" /> Unlikely</label>
+          <br>
           <label>What does your child like most about our Forest School?
-            <select name="reason">
+            <select class="field" name="reason">
               <option value="">Please select their favourite</option>
               <option value="1">Being outdoors</option>
               <option value="2">Being with friends</option>
@@ -37,13 +42,12 @@
               <option value="5">Other</option>
             </select>  
           </label>
-
-          
+          <br>
           <label>Any additional comments or suggestions for us?
-            <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="I would like to say..."></textarea>
+            <textarea class="field" id="suggestions" name="suggestions" rows="3" cols="30" placeholder="I would like to say..."></textarea>
           </label>
         </fieldset>
-        <input id="submit" type="submit" value="Submit" />
+        <input class="field" id="submit" type="submit" value="Submit" />
       </form>
     </main>
   </body>
